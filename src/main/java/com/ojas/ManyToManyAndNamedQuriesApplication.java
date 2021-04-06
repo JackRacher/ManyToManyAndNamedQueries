@@ -32,7 +32,7 @@ public class ManyToManyAndNamedQuriesApplication implements CommandLineRunner{
 //		saveTableData();
 //		getBookDetails();
 //		findBookByPublisher();
-//		findAllDetails();
+		findAllDetails();
 	}
 	
 	private void saveTableData() {

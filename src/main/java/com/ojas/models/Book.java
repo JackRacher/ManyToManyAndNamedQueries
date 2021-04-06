@@ -76,10 +76,10 @@ public class Book {
 	}
 
 	public String toString() {
-		String result = String.format("Publisher [id=%d, name='%s']%n", id, name);
+		String result = String.format("Book [id=%d, name='%s']%n", id, name);
 		if(publisher != null) {
 			for (Publisher publisher : publisher) {
-				result += String.format("Book[id=%d, name='%s']%n", publisher.getId(), publisher.getName());
+				result += String.format("Publisher[id=%d, name='%s']%n", publisher.getId(), publisher.getName());
 			}
 		}
 		return result;

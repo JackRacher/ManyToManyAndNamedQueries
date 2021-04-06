@@ -34,7 +34,7 @@ public class PersonManagementApplication implements CommandLineRunner {
 //		getPersonsByLastName();
 //		findPersonInfobyFirstNameorEmail();
 //		updatePerson();
-		deletePersonById();
+//		deletePersonById();
 	}
 
 	private void createPerson() {

@@ -2,6 +2,7 @@ package com.ojas.models;
 
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,7 +16,7 @@ public class Publisher {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
-	@ManyToMany(mappedBy = "publisher")
+	@ManyToMany(mappedBy = "publisher", cascade = CascadeType.ALL)
 	private Set<Book> book;
 	
 	public Publisher() {
